@@ -1,9 +1,5 @@
 const fs = require("fs");
 
-const getNotes = () => {
-  return "Your Notes...";
-};
-
 const addNotes = (title, body) => {
   const notes = loadNotes();
   const duplicateNote = notes.find((n) => n.title === title);
@@ -58,7 +54,6 @@ const readNote = (title) => {
 };
 
 module.exports = {
-  getNotes,
   addNotes,
   removeNote,
   listNotes,
